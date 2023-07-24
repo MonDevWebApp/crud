@@ -21,7 +21,7 @@ foreach ($files as $file) {
                       <div id="pay-invoice">
                           <div class="card-body">
                               <div class="card-title">
-                                  <h3 class="text-center">Create New User</h3>
+                                  <h3 class="text-center">Create New User Now.</h3>
                               </div>
                               <hr>
                               <form action="#" method="post" novalidate="novalidate">
