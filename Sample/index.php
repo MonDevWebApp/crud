@@ -55,31 +55,26 @@ foreach ($files as $file) {
 
             <div class="card">
                 <div class="card-header">
-                    <strong class="card-title">Multi Select</strong>
+                    <strong class="card-title">Users List</strong>
                 </div>
                 <div class="card-body">
                   <div style="height: 600px; overflow-y: scroll;">
-
-                    <table id="bootstrap-data-table" class="table table-striped table-bordered text-center">
+                     <table id="bootstrap-data-table" class="table table-striped table-bordered text-center">
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Type</th>
-                                <th>Branch</th>
-                                <th>Account Created</th>
-                                <th>Modify</th>
-                                <th>Toggle</th>
+                                <th>Username</th>
+                                <th>Address</th>
                             </tr>
                         </thead>
                         <tbody>
+                        <?php foreach ($users as $user){?>
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>Encoder</td>
-                                <td>Antique</td>
-                                <td>20/07/2023</td>
-                                <td><button type="button" class="btn btn-warning"><i class="fa fa-edit"></i></button></td>
-                                <td><button type="button" class="btn btn-primary"><i class="fa fa-check"></i></button></td>
-                            </tr>
+                                <td><?= $user['name']; ?></td>
+                                <td><?= $user['username']; ?></td>
+                                <td><?= $user['address']; ?></td>
+                             </tr>
+                        <?php } ?>
                         </tbody>
                     </table>
                 </div>

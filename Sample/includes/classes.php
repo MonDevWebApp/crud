@@ -45,6 +45,19 @@ Class MyCrud {
           }
         }
       }
+      public function get_users(){
+        $connection=$this->openConnection();
+        $stmt = $connection->prepare("Select * from users");
+        $stmt -> execute();
+        $users = $stmt->fetchAll();
+        $total = $stmt->rowCount();
+    
+        if ($total > 0) {
+          return $users;
+        }else {
+          return FALSE;
+        }
+      }
 
 }
 
