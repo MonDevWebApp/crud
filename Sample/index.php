@@ -27,18 +27,18 @@ foreach ($files as $file) {
                               <form action="#" method="post" novalidate="novalidate">
                                   <div class="row form-group">
                                       <div class="col col-md-3"><label for="text-input" class=" form-control-label">Full Name</label></div>
-                                      <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" class="form-control"><small class="help-block form-text">Please enter full name</small></div>
+                                      <div class="col-12 col-md-9"><input type="text" id="name" name="name" class="form-control"><small class="help-block form-text">Please enter full name</small></div>
                                   </div>
                                   <div class="row form-group">
                                       <div class="col col-md-3"><label for="email-input" class=" form-control-label">Username</label></div>
-                                      <div class="col-12 col-md-9"><input type="email" id="email-input" name="email-input" class="form-control"><small class="help-block form-text">Please enter the username</small></div>
+                                      <div class="col-12 col-md-9"><input type="email" id="username" name="username" class="form-control"><small class="help-block form-text">Please enter the username</small></div>
                                   </div>
                                   <div class="row form-group">
                                       <div class="col col-md-3"><label for="password-input" class=" form-control-label">Address</label></div>
-                                      <div class="col-12 col-md-9"><input type="text" id="password-input" name="password-input" class="form-control"><small class="help-block form-text">Please enter the password</small></div>
+                                      <div class="col-12 col-md-9"><input type="text" id="address" name="address" class="form-control"><small class="help-block form-text">Please enter the password</small></div>
                                   </div>
                                   <div>
-                                      <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
+                                      <button id="payment-button" type="submit" name="adduser" class="btn btn-lg btn-info btn-block">
                                           <i class="fa fa-user-plus fa-lg"></i>&nbsp;
                                           <span id="payment-button-amount">Register this user</span>
                                       </button>

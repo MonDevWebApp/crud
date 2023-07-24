@@ -1,7 +1,7 @@
-<?php include '../includes/plugins.php'?>
+<?php include '../includes/plugins.php';
 
+$crud->add_user();
 
-<!-- /#header -->
 
 
 
